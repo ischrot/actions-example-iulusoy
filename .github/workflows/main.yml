@@ -35,3 +35,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run linter
       run: flake8
+    - name: Run unittest
+      run: |
+        cd src/package
+        python -m unittest
